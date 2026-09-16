@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Character pipeline base job contract",
+  "description": "Descriptive schema. Runtime performs its own checks; per-task fields are documented in commands.md. No JSON-schema library is loaded by the coordinator.",
+  "type": "object",
+  "required": [
+    "task"
+  ],
+  "properties": {
+    "task": {
+      "enum": [
+        "inspect",
+        "prepare",
+        "uv",
+        "retopo",
+        "bake",
+        "materials",
+        "handoff",
+        "rig",
+        "face_rig",
+        "animate",
+        "retarget",
+        "preview",
+        "studio_render",
+        "qa",
+        "export_candidate",
+        "export",
+        "selftest"
+      ]
+    },
+    "input": {
+      "type": "string",
+      "minLength": 1
+    },
+    "high": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approval_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qa_report": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "resolution": {
+      "type": "integer",
+      "minimum": 64,
+      "maximum": 8192
+    },
+    "fps": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 120
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "task": {
+            "not": {
+              "const": "selftest"
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "input"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": true
+}

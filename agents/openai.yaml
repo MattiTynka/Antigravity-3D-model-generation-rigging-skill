@@ -1,0 +1,6 @@
+interface:
+  display_name: "Character Pipeline"
+  short_description: "Hunyuan, Modddif and headless Blender character workflow"
+  default_prompt: "Use $character-pipeline to create or improve a character through my authorized Chrome tabs and headless Blender. Inspect the existing workspace, establish permissions and budget, run local verification, and execute checkpoint by checkpoint with visual validation."
+policy:
+  allow_implicit_invocation: false

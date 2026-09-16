@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "asset_sha256": "",
+  "skeleton_sha256": "",
+  "clips": [],
+  "required_clip_fields": [
+    "name",
+    "source",
+    "source_license",
+    "fps",
+    "start_frame",
+    "end_frame",
+    "duration_seconds",
+    "loop",
+    "root_motion",
+    "terminal_duplicate_frame",
+    "tested_in_target",
+    "evidence"
+  ]
+}

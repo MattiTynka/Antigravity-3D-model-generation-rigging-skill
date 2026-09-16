@@ -1,0 +1,23 @@
+{
+  "character_name": "",
+  "reference_directory": "inputs/references",
+  "must_preserve": [],
+  "style": "",
+  "target": "generic-glb",
+  "height_m": 1.8,
+  "animations": [
+    {
+      "name": "idle",
+      "root_motion": "in_place",
+      "loop": true
+    }
+  ],
+  "face_required": false,
+  "constraints": {
+    "max_triangles": 80000,
+    "texture_resolution": 2048,
+    "max_influences": 4
+  },
+  "consent_evidence": [],
+  "notes": "Defaults are proposed, not approval of uploads, charges or anatomical guesses."
+}

@@ -1,0 +1,43 @@
+{
+  "name": "FixtureBend",
+  "fps": 30,
+  "loop": true,
+  "frames": [
+    {
+      "frame": 1,
+      "bones": {
+        "upper": {
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "frame": 10,
+      "bones": {
+        "upper": {
+          "rotation_degrees": [
+            20,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "frame": 20,
+      "bones": {
+        "upper": {
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  ]
+}

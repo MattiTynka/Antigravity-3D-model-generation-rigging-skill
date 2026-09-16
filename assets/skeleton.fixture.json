@@ -1,0 +1,49 @@
+{
+  "fixture_only": true,
+  "name": "SyntheticFixtureOnly",
+  "bones": [
+    {
+      "name": "root",
+      "head": [
+        0,
+        0,
+        0
+      ],
+      "tail": [
+        0,
+        0,
+        0.2
+      ],
+      "deform": false
+    },
+    {
+      "name": "lower",
+      "head": [
+        0,
+        0,
+        0.1
+      ],
+      "tail": [
+        0,
+        0,
+        1
+      ],
+      "parent": "root"
+    },
+    {
+      "name": "upper",
+      "head": [
+        0,
+        0,
+        1
+      ],
+      "tail": [
+        0,
+        0,
+        1.9
+      ],
+      "parent": "lower"
+    }
+  ],
+  "rigid_objects": {}
+}

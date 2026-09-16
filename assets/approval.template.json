@@ -1,0 +1,13 @@
+{
+  "status": "PENDING",
+  "reviewer": "",
+  "reason": "",
+  "scopes": [],
+  "input_sha256": "",
+  "skeleton_sha256": "",
+  "mapping_sha256": "",
+  "source_sha256": "",
+  "visual_checks_passed": [],
+  "evidence": [],
+  "note": "Populate from an actual authorized review. Do not change to APPROVED merely to bypass a gate."
+}

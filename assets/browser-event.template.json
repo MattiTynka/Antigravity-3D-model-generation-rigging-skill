@@ -1,0 +1,8 @@
+{
+  "type": "browser_observation",
+  "stage": "S0",
+  "domain": "app.modddif.com",
+  "page_id": "",
+  "evidence": "evidence/browser-observation.png",
+  "observation": "Replace with the actually observed state; the evidence file must exist."
+}
